@@ -1,0 +1,24 @@
+.threadContainer {
+  padding: 16px;
+  padding-left: calc(400px + 16px);
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  background: rgb(240, 240, 240);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.fromThem {
+  align-self: flex-start;
+}
+
+.fromUs {
+  align-self: flex-end;
+  background: rgb(215, 90, 110);
+  color: white;
+}

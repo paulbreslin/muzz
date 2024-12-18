@@ -1,0 +1,41 @@
+.sidebar {
+  border: solid rgb(200, 200, 200) 1px;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+}
+
+.sidebar h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.conversation {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.1s;
+  font-size: 0.9rem;
+}
+
+.conversation:hover,
+.active {
+  background: rgb(240, 240, 240);
+}
+
+.image {
+  border: solid rgb(200, 200, 200) 1px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.lastMessage {
+  color: rgb(100, 100, 100);
+  margin-top: 4px;
+}

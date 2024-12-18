@@ -24,6 +24,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           className={`${styles.conversation} ${
             activeIndex === index ? styles.active : ""
           }`}
+          data-testid="conversation-item"
         >
           <div className={styles.imageContainer}>
             <img

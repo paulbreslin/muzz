@@ -13,10 +13,12 @@ export const MessageThread: React.FC<MessageThreadProps> = ({
   const groupedMessages = groupMessages(activeConversation.messages);
 
   return (
-    <div className={styles.threadContainer}>
+    <div className={styles.threadContainer} data-testid="thread-container">
       {groupedMessages.map((group, groupIndex) => (
         <div key={groupIndex} className={styles.threadGroup}>
-          <div className={styles.header}>{group.header}</div>
+          <div className={styles.header} data-testid="group-header">
+            {group.header}{" "}
+          </div>
           {group.messages.map((message, messageIndex) => {
             const previousMessage = group.messages[messageIndex - 1];
             const shouldReduceSpacing =

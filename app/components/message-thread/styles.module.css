@@ -1,7 +1,17 @@
 .threadContainer {
   padding: 16px;
   padding-left: calc(400px + 16px);
+  padding-bottom: 100px;
+  overflow: scroll;
+  position: absolute;
+  width: calc(100vw);
+  top: 0;
+  height: 100vh;
+}
+
+.threadGroup {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -21,4 +31,8 @@
   align-self: flex-end;
   background: rgb(215, 90, 110);
   color: white;
+}
+
+.groupedMessage {
+  margin-top: -16px;
 }

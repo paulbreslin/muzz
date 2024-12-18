@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import { sortBy } from "lodash";
 
 import { Message } from "../../types/Message";
@@ -30,7 +31,7 @@ export const groupMessages = (messages: Message[]): GroupedMessages[] => {
 
     if (isNewTimeGroup) {
       groups.push({
-        header: formatHeader(message.sentAt),
+        header: format(message.sentAt, "EEEE, MMMM d, yyyy, HH:mm"),
         messages: [message],
       });
     } else {
